@@ -1,21 +1,25 @@
-import styles from './M13.module.css';
+import styles from './M.module.css';
 import React from 'react';
 
 function TopBanner() {
   return (
-    <div>
-      <div className="row">
-        <div className="col align-self-center text-start">
-          <h1>This website is home to Joel Hilton's Movie Collection.</h1>
-        </div>
-        <div className="align-self-center">
-          <img
-            src={require('./JoelHiltonHeadshot.jpg')}
-            alt="Joel Hilton Headshot"
-          ></img>
+    <>
+      <br></br>
+      <div className="text-center">
+        <h2>Joel Hilton's Movie Collection</h2>
+        <img src={require('./JoelHiltonHeadshot.jpg')} alt="companyLogo" />
+      </div>
+      <br></br>
+      <div className="text-center">
+        <div className="row">
+          <div className="col-3"></div>
+          <div className="col-6">
+            <p>For your browsing pleasure.</p>
+          </div>
+          <div className="col-3"></div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
